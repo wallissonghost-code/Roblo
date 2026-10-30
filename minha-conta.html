@@ -1,31 +1,20 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Minha Conta | RBX Hub</title>
-  <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; background: #090d14; color: #f5f7fb; font: 16px system-ui, sans-serif; }
-    header { padding: 22px; border-bottom: 1px solid #27303e; }
-    a { color: #78efb4; text-decoration: none; }
-    main { max-width: 680px; margin: 70px auto; padding: 0 22px; }
-    h1 { font-size: clamp(32px, 5vw, 52px); }
-    .painel { background: #151e2b; border: 1px solid #303b4c; border-radius: 20px; padding: 28px; }
-    p { color: #b0bac9; line-height: 1.7; }
-  </style>
-</head>
-<body>
-  <header><a href="index.html">← Voltar à loja</a></header>
-  <main>
-    <h1>Minha conta</h1>
-    <div class="painel">
-    <div class="section-content login-section" data-testid="login-password-form"><h1 class="login-header">Entrar na Roblox</h1><div id="login-form"><div><div class="login-form-container"><form class="login-form" name="loginForm"><div class="form-group username-form-group"><label for="login-username" class="sr-only">Usuário/e-mail/telefone</label><input id="login-username" name="username" type="text" class="form-control input-field" autocomplete="username webauthn" placeholder="Usuário/e-mail/telefone" value=""></div><div class="form-group password-form-group"><label for="login-password" class="sr-only">Senha</label><input id="login-password" name="password" type="password" class="form-control input-field" placeholder="Senha" value=""><div aria-live="polite"></div></div><button type="button" id="login-button" class="btn-full-width login-button btn-secondary-md">Entrar</button></form></div></div></div><div class="text-center forgot-credentials-link"><a id="forgot-credentials-link" class="text-link" href="https://www.roblox.com/login/forgot-password-or-username" target="_self">Esqueceu a senha ou nome de usuário?</a></div><div><div class="alternative-login-divider-container"><div class="rbx-divider alternative-login-divider"></div></div><button type="button" id="otp-login-button" class="btn-full-width btn-control-md otp-login-button">Envie-me um código único por e-mail</button><button type="button" id="cross-device-login-button" class="btn-full-width btn-control-md cross-device-login-button"><span>Entrada rápida</span></button></div><div id="crossDeviceLoginDisplayCodeModal-container"></div><div id="otp-login-container"></div><div id="account-switcher-confirmation-modal-container"></div><div class="text-center"><div class="signup-option"><span class="no-account-text">Não possui uma conta?</span><a id="sign-up-link" class="text-link signup-link" href="https://www.roblox.com/pt/CreateAccount" target="_self">Cadastrar-se</a></div></div></div>
-      <h2>Seu espaço personalizado</h2>
-      <p>Esta página está pronta para você programar diretamente pelo GitHub.</p>
-      <!-- Para conectar uma conta Roblox de verdade, use OAuth oficial. Nunca solicite senhas ou códigos Roblox nesta página. -->
-      <!-- FIM DA ÁREA DE EDIÇÃO -->
-    </div>
-  </main>
-</body>
-</html>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Minha conta | RBX Hub</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 10% 30%,#263c42 0%,transparent 40%),radial-gradient(circle at 90% 85%,#352b42 0%,transparent 45%),#101318;color:#f4f6f9;font:16px system-ui,-apple-system,Arial}header{padding:24px max(20px,5vw);border-bottom:1px solid #ffffff20;background:#0b1018a8}a{color:#9cebbd;text-decoration:none}main{max-width:560px;margin:clamp(40px,8vh,100px) auto;padding:0 18px}.card{background:#232a35eF;border:1px solid #495361;border-radius:22px;padding:clamp(24px,5vw,44px);box-shadow:0 28px 80px #0008;text-align:center}h1{font-size:clamp(30px,5vw,43px);line-height:1.2;margin:0 0 16px}.subtitle{color:#b9c2d1;line-height:1.65;margin:0 0 28px}.field-preview{display:flex;align-items:center;min-height:56px;background:#343d4a;border:1px solid #586373;border-radius:10px;margin:12px 0;color:#b8c3d0;text-align:left;padding:0 18px}.button{display:block;width:100%;border:1px solid #9cebbd;border-radius:10px;background:#9cebbd;color:#0b1b12;font:700 16px system-ui;padding:16px 18px;text-decoration:none;margin:18px 0}.outline{background:transparent;color:#f4f6f9;border-color:#687382}.separator{display:flex;align-items:center;gap:12px;margin:28px 0;color:#aab5c3}.separator:before,.separator:after{content:"";height:1px;background:#56606c;flex:1}.fine{font-size:13px;color:#aab5c3;line-height:1.6;margin-top:26px}.fine a{text-decoration:underline}
+</style></head>
+<body><header><a href="index.html">← Voltar à loja</a></header><main><div class="card">
+<h1>Conectar sua conta Roblox</h1>
+<p class="subtitle">Acesse sua conta com segurança pela autenticação oficial da Roblox.</p>
+<div class="field-preview" aria-hidden="true">Usuário / e-mail / telefone</div>
+<div class="field-preview" aria-hidden="true">Senha ••••••••</div>
+<a class="button" href="https://www.roblox.com/login" rel="noopener noreferrer">Entrar pela Roblox ↗</a>
+<a href="https://www.roblox.com/login/forgot-password-or-username" rel="noopener noreferrer">Esqueceu a senha ou nome de usuário?</a>
+<div class="separator">OU</div>
+<a class="button outline" href="https://www.roblox.com/login" rel="noopener noreferrer">Outras opções de acesso ↗</a>
+<p class="subtitle">Não possui uma conta? <a href="https://www.roblox.com/pt/CreateAccount" rel="noopener noreferrer">Cadastrar-se</a></p>
+<p class="fine">Página independente RBX Hub. Não insira sua senha neste site. O login real acontece exclusivamente em roblox.com.</p>
+</div></main></body></html>
